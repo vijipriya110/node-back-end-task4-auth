@@ -7,6 +7,7 @@ const router = express.Router();
 //to get student data
 router.get("/all",async (req,res)=>{
     try {
+        
         if( req.query.experience ){
             req.query.experience = +req.query.experience;
         }
